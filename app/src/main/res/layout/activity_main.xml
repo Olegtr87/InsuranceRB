@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:scrollbars="none"
+    android:background="@drawable/fon">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:textAlignment="center"
+    android:onClick="onClick2">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Расчет ОСГО ВТС в РБ"
+        android:id="@+id/osgovtsrb"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:background="@layout/selector"
+        android:onClick="activeOsgoActivity"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Расчет Зеленая карта"
+        android:id="@+id/button2"
+        android:textStyle="bold"
+        android:onClick="onClick1"
+        android:textSize="17sp"
+        android:background="@layout/selector"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/osgovtsrb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Страховые компании"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignRight="@+id/osgovtsrb"
+        android:layout_alignEnd="@+id/osgovtsrb"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:background="@layout/selector"
+        android:onClick="activeInsuranseActivity"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Курсы валют НБ РБ"
+        android:id="@+id/button"
+        android:textStyle="bold"
+        android:layout_below="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:textSize="17sp"
+        android:background="@layout/selector"
+        android:onClick="onClick2"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="О программе"
+        android:id="@+id/button4"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="@layout/selector"
+        android:layout_below="@+id/button7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Справочная информация"
+        android:textStyle="bold"
+        android:background="@layout/selector"
+        android:textSize="17sp"
+        android:id="@+id/button7"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="activeReferenceActivity"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
+</ScrollView>
